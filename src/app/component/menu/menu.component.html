@@ -1,0 +1,35 @@
+<div class="menu">
+    <label class="menu__label" for="username">E-mail</label>
+    <input class="menu__input" pInputText id="username" aria-describedby="email" [(ngModel)]="value" />
+    <small class="menu__small">Digite o e-mail do usuário.</small>
+
+    <button [disabled]="!this.buttonsEnabled.sempre" type="button" class="menu__button" id="btn-sempre" (click)="this.navigate(application.SEMPRE)"
+    routerLink="/sempre" routerLinkActive="active" ariaCurrentWhenActive="page">
+        Sempre
+    </button>
+    
+    <button 
+    id="btn-sgp"
+    type="button" 
+    class="menu__button" 
+    [disabled]="!this.buttonsEnabled.sgp"
+    (click)="this.navigate(application.SGP)"
+    routerLink="/sgp" routerLinkActive="active" ariaCurrentWhenActive="page">
+        SGP
+    </button>
+    
+    <button 
+    id="btn-eva" 
+    type="button" 
+    class="menu__button" 
+    [disabled]="!this.buttonsEnabled.eva" 
+    (click)="this.navigate(application.EVA)"
+    routerLink="/eva" routerLinkActive="active" ariaCurrentWhenActive="page">
+        EVA
+    </button>
+    
+    <button type="reset" class="menu__button__limpar" (click)="this.navigate(application.HOME)"
+    routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+        Limpar
+    </button>
+</div>
