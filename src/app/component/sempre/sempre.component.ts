@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { TableModule } from 'primeng/table';
 import { sempre } from '../../models/sempre';
-import { sgp } from '../../models/sgp';
 
 @Component({
   selector: 'app-sempre',
