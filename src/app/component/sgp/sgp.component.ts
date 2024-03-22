@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { TableModule } from 'primeng/table';
-import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { sgp } from '../../models/sgp';
 
 @Component({
   selector: 'app-sgp',
   standalone: true,
-  imports: [TableModule, ScrollPanelModule],
+  imports: [TableModule],
   templateUrl: './sgp.component.html',
   styleUrl: './sgp.component.scss'
 })
