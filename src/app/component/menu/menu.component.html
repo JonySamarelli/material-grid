@@ -1,6 +1,6 @@
 <div class="menu">
     <label class="menu__label" for="username">E-mail</label>
-    <input class="menu__input" pInputText id="username" aria-describedby="email" [(ngModel)]="value" />
+    <input class="menu__input" pInputText id="username" placeholder="example@example.com" aria-describedby="email" [(ngModel)]="value" />
     <small class="menu__small">Digite o e-mail do usuário.</small>
 
     <button [disabled]="!this.buttonsEnabled.sempre" type="button" class="menu__button" id="btn-sempre" (click)="this.navigate(application.SEMPRE)"

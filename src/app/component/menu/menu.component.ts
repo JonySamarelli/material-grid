@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { FieldsetModule } from 'primeng/fieldset';
 import { Apllication } from '../../enum/apllication';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [FieldsetModule, FormsModule, RouterModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })

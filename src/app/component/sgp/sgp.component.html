@@ -1,129 +1,23 @@
 <div class="header">
-    TITULOOOO
+    <div class="header__aplicacao">DADOS SGP</div>
+    <div class="header__usuario">Usuário: </div>
+    <div class="header__nome">Programas ativos: </div>
 </div>
 <p-table class="table" [value]="info" [tableStyle]="{ 'min-width': '50rem' }">
     <ng-template pTemplate="header" style="position: fixed; top: 0;">
         <tr>
-            <th class="table__header">Info 1</th>
-            <th class="table__header">Info 2</th>
-            <th class="table__header">Info 3</th>
-            <th class="table__header">Info 4</th>
+            <th class="table__header">Programa</th>
+            <th class="table__header">Nome do Ator</th>
+            <th class="table__header">Personagem</th>
+            <th class="table__header">Id do Ator</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-info>
         <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__row__cell">{{ info.code }}</td>
-            <td class="table__row__cell">{{ info.name }}</td>
-            <td class="table__row__cell">{{ info.category }}</td>
-            <td class="table__row__cell">{{ info.quantity }}</td>
+            <td class="table__row__cell">{{ info.programId }}</td>
+            <td class="table__row__cell">{{ info.actorName }}</td>
+            <td class="table__row__cell">{{ info.character }}</td>
+            <td class="table__row__cell">{{ info.actorId }}</td>
         </tr>
     </ng-template>
 </p-table>

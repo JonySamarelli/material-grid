@@ -19,6 +19,9 @@
 
 .header {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -28,10 +31,14 @@
 
     width: 100%;
 
-    text-align: center;
-
     background-color: var(--indigo-700);
     color: var(--primary-50);
+
+    &__aplicacao {
+        font-size: 24px;
+        font-weight: 600;
+        align-self: center;
+    }
 
 }
 
