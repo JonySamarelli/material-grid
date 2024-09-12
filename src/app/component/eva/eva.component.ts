@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TableModule } from 'primeng/table';
 import { Eva } from '../../models/eva';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-eva',
@@ -11,9 +12,18 @@ import { Eva } from '../../models/eva';
 })
 export class EvaComponent {
   info: Eva[] = [
-    new Eva('email 1', 'profileName 1', 1, 'programName 1', 1, 1, 'userLogin 1'),
-    new Eva('email 2', 'profileName 2', 2, 'programName 2', 2, 2, 'userLogin 2'),
-    new Eva('email 3', 'profileName 3', 3, 'programName 3', 3, 3, 'userLogin 3'),
-    new Eva('email 4', 'profileName 4', 4, 'programName 4', 4, 4, 'userLogin 4'),
   ];
+
+  constructor(private router: Router) {
+    const navigation = this.router.getCurrentNavigation();
+    if(navigation && navigation.extras.state?.['dados']) {
+      this.montarTabela(navigation.extras.state['dados']);
+    }
+  }
+
+  montarTabela(dados: Eva[]) {
+    dados.forEach((dado: Eva) => {
+      this.info.push(new Eva(dado.email, dado.profileName, dado.programId, dado.programName,  dado.actorId, dado.userId, dado.userLogin));
+    });
+  }
 }

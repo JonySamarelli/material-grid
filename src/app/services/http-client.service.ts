@@ -11,6 +11,16 @@ export class HttpClientService<T> {
     const url = "https://localhost:7166/api/" + route;
     return this.httpClient.get<any>(url);
   }
+  
+  getSelectOptions(programa: string, selectDb: string) {
+    return this.httpClient.get<any>(`https://localhost:7054/api/${programa}/selectOptions?dbname=${selectDb}`);
+  }
+
+  getdadosMonitoramento(programa: string, query: string) {
+    const body = { query: query };
+    
+    return this.httpClient.get<any>(`https://localhost:7054/api/${programa}/dadosMonitoramento?query=${query}`, );
+  }
 
   getWithId(route: string, id: number): Observable<T> {
     const url = "https://localhost:7166/api/" + route + "/" + id;
@@ -30,5 +40,10 @@ export class HttpClientService<T> {
   delete(route: string, id: number): Observable<HttpStatusCode> {
     const url = "https://localhost:7166/api/" + route + "/" + id;
     return this.httpClient.delete<HttpStatusCode>(url)
+  }
+
+  getSempre(email: string): Observable<HttpEvent<T>> {
+    const url = "https://localhost:7054/api/Sempre?email=" + email;
+    return this.httpClient.get<any>(url);
   }
 }

@@ -1,7 +1,13 @@
 export class sempre {
-    perfil: string;
+    appName: string;
+    email: string;
+    profileName: string;
+    userId: number;
 
-    constructor(perfis: string) {
-        this.perfil = perfis;
+    constructor(appName: string, email: string, profileName: string, userId: number) {
+        this.appName = appName;
+        this.email = email;
+        this.profileName = profileName;
+        this.userId = userId;
     }
 }
